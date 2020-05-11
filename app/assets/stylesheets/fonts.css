@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Blox";
+  src: url(/assets/Blox2.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Kong";
+  src: url(/assets/kongtext.ttf) format("truetype");
+}
