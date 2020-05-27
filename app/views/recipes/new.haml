@@ -1,0 +1,10 @@
+%h3 New Recipe
+= simple_form_for @recipe,
+  url: recipes_path do |f|
+  = f.input :name,
+    label: "Recipe Name",
+    error: "Name can't be blank.",
+    autofocus: true,
+    autocomplete: :off
+
+  = f.button :submit, "Create Recipe"
