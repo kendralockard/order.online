@@ -1,29 +1,17 @@
-.navbar {
-  background: #111111;
-  display: flex;
-}
-
 .title {
-  color: var(--light-purple);
+  color: var(--light-green);
   font-family: 'Blox';
-  font-size: 3rem;
-  padding: 1rem 1.5rem;
+
+  &:hover {
+    color: white;
+  }
 }
 
-a:hover {
-  color: #caf696;
-}
-
-.nav__menu {
-  padding: 2.5rem;
-  position: absolute;
-  right: 2rem;
-}
-
-.nav__item {
-  color: white;
-  display: inline;
+.font-kong {
   font-family: 'Kong';
-  font-size: 1rem;
-  padding: 1.5rem;
+
+  &:hover {
+    color: var(--neon-purple);
+    transition-duration: 150ms;
+  }
 }

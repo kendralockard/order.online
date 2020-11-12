@@ -1,14 +1,12 @@
 %header
-  .navbar
-    .title
-      = link_to "OrDeR oNlInE", root_path
+  .flex.items-center.bg-teal-500.p-6
+    .title.text-5xl= link_to "OrDeR oNlInE", root_path
 
-    .ul.nav__menu
-      .li.nav__item
-        Blog
+    .font-kong.ml-4.px-3.py-2.text-white
+      = link_to "Blog", blogs_path
 
-      .li.nav__item
-        Sports
+    .font-kong.ml-4.px-3.py-2.text-white
+      Sports
 
-      .li.nav__item
-        Data
+    .font-kong.ml-4.px-3.py-2.text-white
+      Data
