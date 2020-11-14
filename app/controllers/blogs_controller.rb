@@ -10,4 +10,20 @@ class BlogsController < ApplicationController
 
   def show
   end
+
+  def new
+  end
+
+  def create
+    p "tried to create"
+    Blog.new(blog_params).save!
+
+    redirect_to blogs_path
+  end
+
+  private
+
+  def blog_params
+    {title: params[:title], body: params[:body]}
+  end
 end
