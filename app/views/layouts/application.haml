@@ -6,9 +6,13 @@
     = stylesheet_pack_tag "application", media: "all", "data-turbolinks-track": "reload"
     = javascript_pack_tag "application", "data-turbolinks-track": "reload"
 
+    = javascript_pack_tag "cursor"
+
     = auto_discovery_link_tag :rss, blogs_url(:format => :rss)
+
+  %body
+    .cursor
 
     = render 'layouts/header'
 
-  %body
     = yield
