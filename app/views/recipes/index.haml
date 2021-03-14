@@ -1,0 +1,11 @@
+.max-w-2xl.mx-auto.my-4.rounded-lg.shadow.bg-lighter-green
+  .flex.justify-end
+    = link_to "New Recipe", new_recipe_path, class: "my-2 mr-3 bg-white bg-lighter-blue focus:shadow-outline focus:outline-none text-gray-800 hober:text-gray-900 font-semibold py-2 px-4 shadow rounded cursor-pointer transition-all duration-150 ease-linear"
+
+  .max-w-2xl.mx-auto.bg-white.rounded-b-lg.shadow.py-4
+    - recipes.each do |r|
+      = link_to recipe_path(r), data: {turbolinks: false} do
+        .hover:bg-blue-100.hover:text-blue-900.transition-all.duration-150.ease-linear
+          .flex.justify-between.p-4
+            .font-medium.ml-4
+              = r.title
