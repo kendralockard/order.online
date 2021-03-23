@@ -1,0 +1,12 @@
+.max-w-2xl.mx-auto.my-4.rounded-lg.shadow.text-gray-900
+  .font-medium.text-xl.py-1.px-2 Ingredient list
+  %hr.w-full
+
+  - recipe.parse_ingredients.each do |i|
+    .flex.justify-start
+      .font-medium.mx-2= i.first
+      - if i.length > 1
+        .font-light= i.last
+
+.max-w-2xl.mx-auto.my-4.rounded-lg.shadow
+  = recipe.instructions
